@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 1.31.105\n"
 "Report-Msgid-Bugs-To: Ireneusz Imiolek <imiolek.i@gmail.com>\n"
 "POT-Creation-Date: 2013-11-01 15:33+0000\n"
-"PO-Revision-Date: 2017-09-28 01:46+0000\n"
+"PO-Revision-Date: 2017-11-02 01:24+0000\n"
 "Last-Translator: Ben Frey <benfrey@email.unc.edu>\n"
 "Language-Team: Cherokee "
 "<https://weblate.r12n.org/projects/eduactiv8/eduactiv8/chr/>\n"
@@ -32,7 +32,7 @@ msgstr[1] "ᏗᎩᎦᎨᎢ ᏒᎧᏔ"
 msgid "strawberry"
 msgid_plural "strawberries"
 msgstr[0] "ᎠᏂ"
-msgstr[1] ""
+msgstr[1] "ᎠᏂ"
 
 msgid "pear"
 msgid_plural "pears"
@@ -61,112 +61,112 @@ msgstr[1] "ᎴᎹᏂ"
 
 msgid "cherry"
 msgid_plural "cherries"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "ᏔᏯ"
+msgstr[1] "ᏔᏯ"
 
 msgid "pepper"
 msgid_plural "peppers"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "ᎤᏥᎸ ᎤᏂᏴᏍᏗ"
+msgstr[1] "ᎤᏥᎸ ᏧᏂᏴᏍᏗ"
 
 msgid "carrot"
 msgid_plural "carrots"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "ᎠᏓᎶᏂᎨ ᎤᎾᏍᏕᏥ"
+msgstr[1] "ᎠᏂᏓᎶᏂᎨ ᎤᎾᏍᏕᏥ"
 
 msgid "banana"
 msgid_plural "bananas"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "ᏆᏁᎾ"
+msgstr[1] "ᏆᏁᎾ"
 
 msgid "watermelon"
 msgid_plural "watermelons"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "ᎬᎩᏍᏗ"
+msgstr[1] "ᎬᎩᏍᏗ"
 
 msgid "Equilateral Triangle"
-msgstr ""
+msgstr "Equilateral ᏦᎢ ᏧᏅᏏᏯ"
 
 msgid "Isosceles Triangle"
-msgstr ""
+msgstr "Isosceles ᏦᎢ ᏧᏅᏏᏯ"
 
 msgid "Obtuse Triangle"
-msgstr ""
+msgstr "Obtuse ᏦᎢ ᏧᏅᏏᏯ"
 
 msgid "Right Triangle"
-msgstr ""
+msgstr "ᎠᎦᏘᏏ ᏓᏍᏓᏅᏅ ᏦᎢ ᏧᏅᏏᏯ"
 
 msgid "Acute Triangle"
-msgstr ""
+msgstr "Acute ᏦᎢ ᏧᏅᏏᏯ"
 
 msgid "Square"
 msgstr "ᏅᎩ ᏧᏅᏏᏯ"
 
 msgid "Rectangle"
-msgstr ""
+msgstr "ᎬᎾᎯᏓ ᏅᎩ ᏧᏅᏏᏯ"
 
 msgid "Right Trapezium"
-msgstr ""
+msgstr "ᎠᎦᏘᏏ ᏓᏍᏓᏅᏅ ᎯᏍᎩ ᏧᏅᏏᏯ"
 
 msgid "Isosceles Trapezium"
-msgstr ""
+msgstr "Isosceles ᎯᏍᎩ ᏧᏅᏏᏯ"
 
 msgid "Rhombus"
-msgstr ""
+msgstr "ᏅᏯ ᎤᏥᏍᏓᎷᎩᏍᎩ ᎢᏳᏍᏗ"
 
 msgid "Parallelogram"
-msgstr ""
+msgstr "ᏂᏚᏦᏒᎾ ᏓᏍᏓᎾᏅ"
 
 msgid "Pentagon"
-msgstr ""
+msgstr "ᎯᏍᎩ ᏧᏅᏏᏯ"
 
 msgid "Hexagon"
-msgstr ""
+msgstr "ᏑᏓᎵ ᏧᏅᏏᏯ"
 
 msgid "Circle"
-msgstr ""
+msgstr "ᎦᏌᏆᎸ"
 
 msgid "Ellipse"
-msgstr ""
+msgstr "ᎤᏪᏥ ᎢᏳᏍᏗ ᎦᏌᏆᎸ"
 
 msgid "Cube"
-msgstr ""
+msgstr "ᏅᎩ ᏧᏅᏏᏯ ᎧᏁᏌ"
 
 msgid "Square Prism"
-msgstr ""
+msgstr "ᏅᎩ ᏧᏅᏏᏯ ᎤᏥᏍᏓᎷᎩᏍᎩ"
 
 msgid "Triangular Prism"
-msgstr ""
+msgstr "ᏦᎢ ᏧᏅᏏᏯ ᎤᏥᏍᏓᎷᎩᏍᎩ"
 
 msgid "Square Pyramid"
-msgstr ""
+msgstr "ᏅᎩ ᏧᏅᏏᏯ ᎠᏯᏖᏃᎯ Ꮶ ᏧᏅᏏᏯ ᏗᎪᏍᏓᏱ"
 
 msgid "Triangular Pyramid"
-msgstr ""
+msgstr "Ꮶ ᏧᏅᏏᏯ ᎠᏯᏖᏃᎯ Ꮶ ᏧᏅᏏᏯ ᏗᎪᏍᏓᏱ"
 
 msgid "Sphere"
-msgstr ""
+msgstr "ᎠᎳᏍᎦᎶᏗ"
 
 msgid "Cylinder"
-msgstr ""
+msgstr "ᎦᏅᎯᏓ ᎤᏒᏓᏅᎯᏓ"
 
 msgid "Cone"
-msgstr ""
+msgstr "ᎧᏴᏍᎪᏍᏓᏱ"
 
 msgid "Torus"
-msgstr ""
+msgstr "ᎠᎵᏰᏑᏍᏔᏬ ᎢᏳᏍᏗ"
 
 msgid "Default Language:"
-msgstr ""
+msgstr "ᎠᏓᏁᏟᏴᏍᏗᏍᎩ ᎦᏬᏂᎯᏍᏗ:"
 
 msgid "Guest"
-msgstr ""
+msgstr "ᎠᏓᏩᏛᎯᏙᎯ"
 
 msgid "Hi Stranger :) Would you like to log in so we know who you are?"
 msgstr ""
 
 msgid "Log in:"
-msgstr ""
+msgstr "ᏣᎴᏅᏗ:"
 
 msgid "user name:"
 msgstr ""
