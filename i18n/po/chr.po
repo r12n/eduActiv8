@@ -8,11 +8,11 @@ msgstr ""
 "Project-Id-Version: 1.31.105\n"
 "Report-Msgid-Bugs-To: Ireneusz Imiolek <imiolek.i@gmail.com>\n"
 "POT-Creation-Date: 2013-11-01 15:33+0000\n"
-"PO-Revision-Date: 2017-09-13 21:13+0000\n"
-"Last-Translator: Derek Lackaff <lackaff@lackaff.net>\n"
-"Language-Team: Danish "
-"<https://weblate.r12n.org/projects/eduactiv8/eduactiv8/da/>\n"
-"Language: da\n"
+"PO-Revision-Date: 2017-11-02 01:25+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
+"Language-Team: Cherokee "
+"<https://weblate.r12n.org/projects/eduactiv8/eduactiv8/chr/>\n"
+"Language: chr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -21,155 +21,158 @@ msgstr ""
 
 msgid "green apple"
 msgid_plural "green apples"
-msgstr[0] "grønt æble"
-msgstr[1] "grønne æbler"
+msgstr[0] "ᎠᏤᎢ ᏒᎧᏔ"
+msgstr[1] "ᏗᏤᎢ ᏒᎧᏔ"
 
 msgid "red apple"
 msgid_plural "red apples"
-msgstr[0] "rødt æble"
-msgstr[1] "røde æbler"
+msgstr[0] "ᎩᎦᎨᎢ ᏒᎧᏔ"
+msgstr[1] "ᏗᎩᎦᎨᎢ ᏒᎧᏔ"
 
 msgid "strawberry"
 msgid_plural "strawberries"
-msgstr[0] "jordbær"
-msgstr[1] "jordbær"
+msgstr[0] "ᎠᏂ"
+msgstr[1] "ᎠᏂ"
 
 msgid "pear"
 msgid_plural "pears"
-msgstr[0] "pære"
-msgstr[1] "pærer"
+msgstr[0] "ᏎᏗ ᎢᏳᏍᏗ"
+msgstr[1] "ᏎᏗ ᎢᏳᏍᏗ"
 
-msgid "orange"
+msgid "orange [fruit]"
 msgid_plural "oranges"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "ᎠᏓᎶᏂᎨᎢ"
+msgstr[1] "ᏗᏓᎶᏂᎨᎢ"
 
 msgid "onion"
 msgid_plural "onions"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "ᏒᎩ"
+msgstr[1] "ᏒᎩ"
 
 msgid "tomato"
 msgid_plural "tomatoes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "ᎤᏁᎫᎯᏍᏗ"
+msgstr[1] "ᏧᏁᎫᎯᏍᏗ"
 
 msgid "lemon"
 msgid_plural "lemons"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "ᎴᎹᏂ"
+msgstr[1] "ᎴᎹᏂ"
 
 msgid "cherry"
 msgid_plural "cherries"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "ᏔᏯ"
+msgstr[1] "ᏔᏯ"
 
 msgid "pepper"
 msgid_plural "peppers"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "ᎤᏥᎸ ᎤᏂᏴᏍᏗ"
+msgstr[1] "ᎤᏥᎸ ᏧᏂᏴᏍᏗ"
 
 msgid "carrot"
 msgid_plural "carrots"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "ᎠᏓᎶᏂᎨ ᎤᎾᏍᏕᏥ"
+msgstr[1] "ᎠᏂᏓᎶᏂᎨ ᎤᎾᏍᏕᏥ"
 
 msgid "banana"
 msgid_plural "bananas"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "ᏆᏁᎾ"
+msgstr[1] "ᏆᏁᎾ"
 
 msgid "watermelon"
 msgid_plural "watermelons"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "ᎬᎩᏍᏗ"
+msgstr[1] "ᎬᎩᏍᏗ"
 
 msgid "Equilateral Triangle"
-msgstr ""
+msgstr "Equilateral ᏦᎢ ᏧᏅᏏᏯ"
 
 msgid "Isosceles Triangle"
-msgstr ""
+msgstr "Isosceles ᏦᎢ ᏧᏅᏏᏯ"
 
 msgid "Obtuse Triangle"
-msgstr ""
+msgstr "Obtuse ᏦᎢ ᏧᏅᏏᏯ"
 
 msgid "Right Triangle"
-msgstr ""
+msgstr "ᎠᎦᏘᏏ ᏓᏍᏓᏅᏅ ᏦᎢ ᏧᏅᏏᏯ"
 
 msgid "Acute Triangle"
-msgstr ""
+msgstr "Acute ᏦᎢ ᏧᏅᏏᏯ"
 
 msgid "Square"
-msgstr ""
+msgstr "ᏅᎩ ᏧᏅᏏᏯ"
 
 msgid "Rectangle"
-msgstr ""
+msgstr "ᎬᎾᎯᏓ ᏅᎩ ᏧᏅᏏᏯ"
 
 msgid "Right Trapezium"
-msgstr ""
+msgstr "ᎠᎦᏘᏏ ᏓᏍᏓᏅᏅ ᎯᏍᎩ ᏧᏅᏏᏯ"
 
 msgid "Isosceles Trapezium"
-msgstr ""
+msgstr "Isosceles ᎯᏍᎩ ᏧᏅᏏᏯ"
 
 msgid "Rhombus"
-msgstr ""
+msgstr "ᏅᏯ ᎤᏥᏍᏓᎷᎩᏍᎩ ᎢᏳᏍᏗ"
 
 msgid "Parallelogram"
-msgstr ""
+msgstr "ᏂᏚᏦᏒᎾ ᏓᏍᏓᎾᏅ"
 
 msgid "Pentagon"
-msgstr ""
+msgstr "ᎯᏍᎩ ᏧᏅᏏᏯ"
 
 msgid "Hexagon"
-msgstr ""
+msgstr "ᏑᏓᎵ ᏧᏅᏏᏯ"
 
 msgid "Circle"
-msgstr ""
+msgstr "ᎦᏌᏆᎸ"
 
 msgid "Ellipse"
-msgstr ""
+msgstr "ᎤᏪᏥ ᎢᏳᏍᏗ ᎦᏌᏆᎸ"
 
 msgid "Cube"
-msgstr ""
+msgstr "ᏅᎩ ᏧᏅᏏᏯ ᎧᏁᏌ"
 
 msgid "Square Prism"
-msgstr ""
+msgstr "ᏅᎩ ᏧᏅᏏᏯ ᎤᏥᏍᏓᎷᎩᏍᎩ"
 
 msgid "Triangular Prism"
-msgstr ""
+msgstr "ᏦᎢ ᏧᏅᏏᏯ ᎤᏥᏍᏓᎷᎩᏍᎩ"
 
 msgid "Square Pyramid"
-msgstr ""
+msgstr "ᏅᎩ ᏧᏅᏏᏯ ᎠᏯᏖᏃᎯ Ꮶ ᏧᏅᏏᏯ ᏗᎪᏍᏓᏱ"
 
 msgid "Triangular Pyramid"
-msgstr ""
+msgstr "Ꮶ ᏧᏅᏏᏯ ᎠᏯᏖᏃᎯ Ꮶ ᏧᏅᏏᏯ ᏗᎪᏍᏓᏱ"
 
 msgid "Sphere"
-msgstr ""
+msgstr "ᎠᎳᏍᎦᎶᏗ"
 
 msgid "Cylinder"
-msgstr ""
+msgstr "ᎦᏅᎯᏓ ᎤᏒᏓᏅᎯᏓ"
 
 msgid "Cone"
-msgstr ""
+msgstr "ᎧᏴᏍᎪᏍᏓᏱ"
 
 msgid "Torus"
-msgstr ""
+msgstr "ᎠᎵᏰᏑᏍᏔᏬ ᎢᏳᏍᏗ"
 
 msgid "Default Language:"
-msgstr ""
+msgstr "ᎠᏓᏁᏟᏴᏍᏗᏍᎩ ᎦᏬᏂᎯᏍᏗ:"
 
 msgid "Guest"
+msgstr "ᎠᏓᏩᏛᎯᏙᎯ"
+
+msgid "Hi Stranger :) Would you like to log in so we know who you are?"
 msgstr ""
 
 msgid "Log in:"
-msgstr ""
+msgstr "ᏣᎴᏅᏗ:"
 
 msgid "user name:"
-msgstr ""
+msgstr "ᎬᏗᏍᎩ ᏚᏙᎥᎢ:"
 
 msgid "password:"
-msgstr ""
+msgstr "ᎠᏍᏚᎢᏍᏙᏗ ᎥᎧᏁᎬᎢ"
 
 msgid "Login"
 msgstr ""
@@ -653,6 +656,9 @@ msgstr ""
 msgid "red"
 msgstr ""
 
+msgid "orange [color]"
+msgstr ""
+
 msgid "yellow"
 msgstr ""
 
@@ -1085,23 +1091,15 @@ msgid ""
 "Commons License (CC BY-SA). \n"
 " Please view credits.txt for more info about authors of media files used in this project"
 msgstr ""
-"Laby, 2010 by Mehdi Cherti (mehdidc) \n"
-" Sounds by various authors who contributed their works to freesound.org. \n"
-" Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative "
-"Commons License (CC BY-SA). \n"
-" Please view credits.txt for more info about authors of media files used in this project"
 
 msgid "Licence"
-msgstr "Licence"
+msgstr ""
 
 msgid ""
 "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, "
 "either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If "
 "not, see <http://www.gnu.org/licenses/>."
 msgstr ""
-"This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, "
-"either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If "
-"not, see <http://www.gnu.org/licenses/>."
 
 msgid "A collection of educational activities for kids"
 msgstr ""
@@ -1192,16 +1190,25 @@ msgid ""
 "http://espeak.sourceforge.net/"
 msgstr ""
 
-msgid "Decimals (Category)"
+msgid "Decimals"
 msgstr ""
 
-msgid "Fractions (Category)"
+msgid "Fractions"
 msgstr ""
 
-msgid "Ratios (Category)"
+msgid "Ratios"
 msgstr ""
 
-msgid "Percentages (Category)"
+msgid "Percentages"
+msgstr ""
+
+msgid "long form"
+msgstr ""
+
+msgid "short form"
+msgstr ""
+
+msgid "Catalan clock"
 msgstr ""
 
 msgid "Word Builders"
@@ -1247,55 +1254,4 @@ msgid "Transport"
 msgstr ""
 
 msgid "Food"
-msgstr ""
-
-msgid "Listening Exercises"
-msgstr ""
-
-msgid "Match sounds to words"
-msgstr ""
-
-msgid "Patterns"
-msgstr ""
-
-msgid "Number Patterns"
-msgstr ""
-
-msgid "Letter Patterns"
-msgstr ""
-
-msgid "Color Patterns"
-msgstr ""
-
-msgid "Image Patterns"
-msgstr ""
-
-msgid "Fraction Patterns"
-msgstr ""
-
-msgid "Shape Patterns"
-msgstr ""
-
-msgid "Complete the pattern on the top line."
-msgstr ""
-
-msgid "Heptagon"
-msgstr ""
-
-msgid "Pentagon"
-msgstr ""
-
-msgid "Octagon"
-msgstr ""
-
-msgid "Hexagon"
-msgstr ""
-
-msgid "Ellipse"
-msgstr ""
-
-msgid "Match shapes to their names"
-msgstr ""
-
-msgid "Negative numbers"
 msgstr ""
