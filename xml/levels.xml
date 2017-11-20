@@ -6,6 +6,22 @@
         <level n="1" data="" />
     </game>
 
+    <!-- ABC Activities (game047) -->
+    <!-- data = [color code letters, % of letters to complete, immediate feedback] -->
+    <game dbids="11, 140" min_age="0" max_age="3" show_all="1">
+        <chapters data="[1, 3, 5, 8]" />
+        <levels count="8" games_per_level="3">
+            <level n="1" data="[0, 25, 1]" />
+            <level n="2" data="[0, 50, 1]" />
+            <level n="3" data="[0, 75, 1]" />
+            <level n="4" data="[0, 100, 1]" />
+            <level n="5" data="[1, 25, 0]" />
+            <level n="6" data="[1, 50, 0]" />
+            <level n="7" data="[1, 75, 0]" />
+            <level n="8" data="[1, 100, 0]" />
+        </levels>
+    </game>
+
     <!-- Letter Sorting Activities (game047) -->
     <!-- data = [number of letters, consecutive leters, font size] -->
     <game dbids="12" min_age="0" max_age="1" show_all="1">
@@ -182,6 +198,28 @@
         </levels>
     </game>
 
+    <game dbids="215" min_age="4" max_age="4" show_all="1">
+        <chapters data="[1, 3, 5]" />
+        <levels count="5" games_per_level="5">
+            <level n="1" data="[3, -100, 50, False, 6]" />
+            <level n="2" data="[5, -500, 250, False, 6]" />
+            <level n="3" data="[7, -1000, 500, False, 6]" />
+            <level n="4" data="[9, -5000, 5000, False, 6]" />
+            <level n="5" data="[11, -9999, 9999, False, 6]" />
+        </levels>
+    </game>
+
+    <game dbids="215" min_age="5" max_age="6" show_all="0">
+        <chapters data="[1, 3, 5]" />
+        <levels count="5" games_per_level="5">
+            <level n="1" data="[3, -1000, 500, False, 6]" />
+            <level n="2" data="[5, -5000, 2500, False, 6]" />
+            <level n="3" data="[7, -7000, 5000, False, 6]" />
+            <level n="4" data="[9, -10000, 5000, False, 7]" />
+            <level n="5" data="[11, -99999, 59999, False, 7]" />
+        </levels>
+    </game>
+
     <!-- number comparison activities (game032) -->
     <!-- data = [horizontal_number_of_units, bottom_limit, top_limit, number_count, font_size] -->
     <game dbids="45" min_age="0" max_age="1" show_all="1">
@@ -261,6 +299,27 @@
         </levels>
     </game>
 
+    <game dbids="216" min_age="4" max_age="7" show_all="1">
+        <chapters data="[1, 4, 8, 12, 15]" />
+        <levels count="15" games_per_level="5">
+            <level n="1" data="[3, -1000, 50, 2, 5]" />
+            <level n="2" data="[5, -1000, 500, 3, 5]" />
+            <level n="3" data="[7, -1000, 500, 4, 5]" />
+            <level n="4" data="[9, -1000, 750, 5, 5]" />
+            <level n="5" data="[11, -1000, 750, 6, 5]" />
+            <level n="6" data="[3, -5000, 2500, 2, 5]" />
+            <level n="7" data="[5, -5000, 2500, 3, 5]" />
+            <level n="8" data="[7, -5000, 2500, 4, 5]" />
+            <level n="9" data="[9, -5000, 2500, 5, 5]" />
+            <level n="10" data="[11, -5000, 2500, 6, 5]" />
+            <level n="11" data="[3, -9999, 4999, 2, 5]" />
+            <level n="12" data="[5, -9999, 4999, 3, 5]" />
+            <level n="13" data="[7, -9999, 4999, 4, 5]" />
+            <level n="14" data="[9, -9999, 4999, 5, 5]" />
+            <level n="15" data="[11, -9999, 4999, 6, 5]" />
+        </levels>
+    </game>
+
     <!-- even or odd activity (game011) -->
     <!-- data = [number_count, bottom_limit, top_limit, font_size] -->
     <game dbids="44" min_age="1" max_age="1" show_all="1">
@@ -296,6 +355,18 @@
             <level n="4" data="[20, 100, 600, 3]" />
             <level n="5" data="[20, 300, 800, 3]" />
             <level n="6" data="[20, 400, 999, 3]" />
+        </levels>
+    </game>
+
+    <game dbids="217" min_age="4" max_age="7" show_all="1">
+        <chapters data="[1, 3, 6]" />
+        <levels count="6" games_per_level="5">
+            <level n="1" data="[10, -99, 49, 3]" />
+            <level n="2" data="[10, -100, 50, 3]" />
+            <level n="3" data="[10, -250, 100, 3]" />
+            <level n="4" data="[20, -500, 250, 3]" />
+            <level n="5" data="[20, -750, 300, 3]" />
+            <level n="6" data="[20, -999, 499, 3]" />
         </levels>
     </game>
 
@@ -339,64 +410,101 @@
     <game dbids="31, 35, 39" min_age="3" max_age="3" show_all="0">
         <chapters data="[1, 3, 6, 9, 12, 14]" />
         <levels count="14" games_per_level="5">
-            <level n="1" data="[111, 149, 5, 19, '+', 3, 10, 5, 3]" />
-            <level n="2" data="[5, 19, 111, 149, '+', 3, 10, 5, 3]" />
-            <level n="3" data="[151, 169, 11, 29, '+', 3, 10, 5, 3]" />
-            <level n="4" data="[11, 29, 151, 169, '+', 3, 10, 5, 3]" />
-            <level n="5" data="[151, 199, 51, 59, '+', 3, 10, 5, 3]" />
-            <level n="6" data="[51, 59, 151, 199, '+', 3, 10, 5, 3]" />
-            <level n="7" data="[201, 399, 11, 99, '+', 3, 10, 5, 3]" />
-            <level n="8" data="[11, 99, 201, 399, '+', 3, 10, 5, 3]" />
-            <level n="9" data="[401, 799, 101, 201, '+', 3, 10, 5, 3]" />
-            <level n="10" data="[101, 201, 401, 799, '+', 3, 10, 5, 3]" />
-            <level n="11" data="[301, 699, 201, 299, '+', 3, 10, 5, 3]" />
-            <level n="12" data="[201, 299, 301, 699, '+', 3, 10, 5, 3]" />
-            <level n="13" data="[401, 599, 299, 399, '+', 3, 10, 5, 3]" />
-            <level n="14" data="[299, 399, 401, 599, '+', 3, 10, 5, 3]" />
+            <level n="1" data="[111, 149, 5, 19, '+', 3, 10, 4, 3]" />
+            <level n="2" data="[5, 19, 111, 149, '+', 3, 10, 4, 3]" />
+            <level n="3" data="[151, 169, 11, 29, '+', 3, 10, 4, 3]" />
+            <level n="4" data="[11, 29, 151, 169, '+', 3, 10, 4, 3]" />
+            <level n="5" data="[151, 199, 51, 59, '+', 3, 10, 4, 3]" />
+            <level n="6" data="[51, 59, 151, 199, '+', 3, 10, 4, 3]" />
+            <level n="7" data="[201, 399, 11, 99, '+', 3, 10, 4, 3]" />
+            <level n="8" data="[11, 99, 201, 399, '+', 3, 10, 4, 3]" />
+            <level n="9" data="[401, 799, 101, 201, '+', 3, 10, 4, 3]" />
+            <level n="10" data="[101, 201, 401, 799, '+', 3, 10, 4, 3]" />
+            <level n="11" data="[301, 699, 201, 299, '+', 3, 10, 4, 3]" />
+            <level n="12" data="[201, 299, 301, 699, '+', 3, 10, 4, 3]" />
+            <level n="13" data="[401, 599, 299, 399, '+', 3, 10, 4, 3]" />
+            <level n="14" data="[299, 399, 401, 599, '+', 3, 10, 4, 3]" />
         </levels>
     </game>
 
     <game dbids="31, 35, 39" min_age="4" max_age="4" show_all="0">
         <chapters data="[1, 3, 6, 9, 12, 14]" />
         <levels count="14" games_per_level="5">
-            <level n="1" data="[1111, 1949, 11, 29, '+', 4, 28, 5, 3]" />
-            <level n="2" data="[11, 29, 1111, 1949, '+', 4, 28, 5, 3]" />
-            <level n="3" data="[1651, 1969, 111, 229, '+', 4, 28, 5, 3]" />
-            <level n="4" data="[111, 229, 1651, 1969, '+', 4, 28, 5, 3]" />
-            <level n="5" data="[1651, 1999, 151, 559, '+', 4, 28, 5, 3]" />
-            <level n="6" data="[151, 559, 1651, 1999, '+', 4, 28, 5, 3]" />
-            <level n="7" data="[2901, 3999, 559, 999, '+', 4, 28, 5, 3]" />
-            <level n="8" data="[559, 999, 2901, 3999, '+', 4, 28, 5, 3]" />
-            <level n="9" data="[4901, 7999, 1001, 2001, '+', 4, 28, 5, 3]" />
-            <level n="10" data="[1001, 2001, 4901, 7999, '+', 4, 28, 5, 3]" />
-            <level n="11" data="[3901, 6999, 2001, 2999, '+', 4, 28, 5, 3]" />
-            <level n="12" data="[2001, 2999, 3901, 6999, '+', 4, 28, 5, 3]" />
-            <level n="13" data="[4901, 5999, 2999, 3999, '+', 4, 28, 5, 3]" />
-            <level n="14" data="[2999, 3999, 4901, 5999, '+', 4, 28, 5, 3]" />
+            <level n="1" data="[1111, 1949, 11, 29, '+', 4, 28, 4, 3]" />
+            <level n="2" data="[11, 29, 1111, 1949, '+', 4, 28, 4, 3]" />
+            <level n="3" data="[1651, 1969, 111, 229, '+', 4, 28, 4, 3]" />
+            <level n="4" data="[111, 229, 1651, 1969, '+', 4, 28, 4, 3]" />
+            <level n="5" data="[1651, 1999, 151, 559, '+', 4, 28, 4, 3]" />
+            <level n="6" data="[151, 559, 1651, 1999, '+', 4, 28, 4, 3]" />
+            <level n="7" data="[2901, 3999, 559, 999, '+', 4, 28, 4, 3]" />
+            <level n="8" data="[559, 999, 2901, 3999, '+', 4, 28, 4, 3]" />
+            <level n="9" data="[4901, 7999, 1001, 2001, '+', 4, 28, 4, 3]" />
+            <level n="10" data="[1001, 2001, 4901, 7999, '+', 4, 28, 4, 3]" />
+            <level n="11" data="[3901, 6999, 2001, 2999, '+', 4, 28, 4, 3]" />
+            <level n="12" data="[2001, 2999, 3901, 6999, '+', 4, 28, 4, 3]" />
+            <level n="13" data="[4901, 5999, 2999, 3999, '+', 4, 28, 4, 3]" />
+            <level n="14" data="[2999, 3999, 4901, 5999, '+', 4, 28, 4, 3]" />
         </levels>
     </game>
 
     <game dbids="31, 35, 39" min_age="5" max_age="5" show_all="0">
         <chapters data="[1, 3, 6]" />
         <levels count="6" games_per_level="5">
-            <level n="1" data="[10001, 39999, 111, 999, '+', 7, 29, 5, 3]" />
-            <level n="2" data="[111, 999, 10001, 39999, '+', 7, 29, 5, 3]" />
-            <level n="3" data="[30001, 59999, 111, 999, '+', 7, 29, 5, 3]" />
-            <level n="4" data="[111, 999, 30001, 59999, '+', 7, 29, 5, 3]" />
-            <level n="5" data="[60001, 89999, 1001, 9999, '+', 7, 29, 5, 3]" />
-            <level n="6" data="[1001, 9999, 60001, 89999, '+', 7, 29, 5, 3]" />
+            <level n="1" data="[10001, 39999, 111, 999, '+', 7, 29, 4, 3]" />
+            <level n="2" data="[111, 999, 10001, 39999, '+', 7, 29, 4, 3]" />
+            <level n="3" data="[30001, 59999, 111, 999, '+', 7, 29, 4, 3]" />
+            <level n="4" data="[111, 999, 30001, 59999, '+', 7, 29, 4, 3]" />
+            <level n="5" data="[60001, 89999, 1001, 9999, '+', 7, 29, 4, 3]" />
+            <level n="6" data="[1001, 9999, 60001, 89999, '+', 7, 29, 4, 3]" />
         </levels>
     </game>
 
     <game dbids="31, 35, 39" min_age="6" max_age="6" show_all="0">
         <chapters data="[1, 3, 6]" />
         <levels count="6" games_per_level="5">
-            <level n="1" data="[100001, 399999, 1001, 9999, '+', 8, 30, 5, 3]" />
-            <level n="2" data="[1001, 9999, 100001, 399999, '+', 8, 30, 5, 3]" />
-            <level n="3" data="[300001, 599999, 1001, 9999, '+', 8, 30, 5, 3]" />
-            <level n="4" data="[1001, 9999, 300001, 599999, '+', 8, 30, 5, 3]" />
-            <level n="5" data="[600001, 899999, 10001, 99999, '+', 8, 30, 5, 3]" />
-            <level n="6" data="[10001, 99999, 600001, 899999, '+', 8, 30, 5, 3]" />
+            <level n="1" data="[100001, 399999, 1001, 9999, '+', 8, 30, 4, 3]" />
+            <level n="2" data="[1001, 9999, 100001, 399999, '+', 8, 30, 4, 3]" />
+            <level n="3" data="[300001, 599999, 1001, 9999, '+', 8, 30, 4, 3]" />
+            <level n="4" data="[1001, 9999, 300001, 599999, '+', 8, 30, 4, 3]" />
+            <level n="5" data="[600001, 899999, 10001, 99999, '+', 8, 30, 4, 3]" />
+            <level n="6" data="[10001, 99999, 600001, 899999, '+', 8, 30, 4, 3]" />
+        </levels>
+    </game>
+
+    <!-- negative numbers -->
+    <game dbids="218, 219, 220" min_age="4" max_age="4" show_all="1">
+        <chapters data="[1, 3, 6, 9, 12]" />
+        <levels count="12" games_per_level="5">
+            <level n="1" data="[-50, -10, 11, 29, '+', 4, 28, 4, 3]" />
+            <level n="2" data="[-100, -10, 11, 49, '+', 4, 28, 4, 3]" />
+            <level n="3" data="[-250, -50, 11, 329, '+', 4, 28, 4, 3]" />
+            <level n="4" data="[-500, -100, 11, 759, '+', 4, 28, 4, 3]" />
+            <level n="5" data="[-750, -100, 101, 500, '+', 4, 28, 4, 3]" />
+            <level n="6" data="[-1000, -500, 201, 1999, '+', 4, 28, 4, 3]" />
+            <level n="7" data="[-2500, -500, 201, 3999, '+', 4, 28, 4, 3]" />
+            <level n="8" data="[-5000, -1000, 201, 6999, '+', 4, 28, 4, 3]" />
+            <level n="9" data="[-7500, -1000, 2011, 9999, '+', 4, 28, 4, 3]" />
+            <level n="10" data="[-9999, -2000, 2001, 9999, '+', 4, 28, 4, 3]" />
+            <level n="11" data="[-4999, -500, -2000, -99, '+', 4, 29, 4, 3]" />
+            <level n="12" data="[-4999, 5000, -5000, -99, '+', 4, 29, 4, 3]" />
+        </levels>
+    </game>
+
+    <game dbids="218, 219, 220" min_age="5" max_age="6" show_all="0">
+        <chapters data="[1, 3, 6, 9, 12]" />
+        <levels count="12" games_per_level="5">
+            <level n="1" data="[-500, -100, 110, 290, '+', 6, 29, 4, 3]" />
+            <level n="2" data="[-1000, -100, 110, 490, '+', 6, 29, 4, 3]" />
+            <level n="3" data="[-2500, -500, 110, 3290, '+', 6, 29, 4, 3]" />
+            <level n="4" data="[-5000, -1000, 110, 7590, '+', 6, 29, 4, 3]" />
+            <level n="5" data="[-7500, -1000, 1010, 5000, '+', 6, 29, 4, 3]" />
+            <level n="6" data="[-10000, -5000, 2010, 19990, '+', 6, 29, 4, 3]" />
+            <level n="7" data="[-25000, -5000, 2010, 39990, '+', 6, 29, 4, 3]" />
+            <level n="8" data="[-50000, -10000, 2010, 69990, '+', 6, 29, 4, 3]" />
+            <level n="9" data="[-75000, -10000, 20110, 99990, '+', 6, 29, 4, 3]" />
+            <level n="10" data="[-99990, -20000, 20010, 99990, '+', 6, 29, 4, 3]" />
+            <level n="11" data="[-49990, -5000, -4999, -999, '+', 6, 30, 4, 3]" />
+            <level n="12" data="[-49990, 50000, -9999, -999, '+', 6, 30, 4, 3]" />
         </levels>
     </game>
 
@@ -432,67 +540,99 @@
     <game dbids="32, 36, 40" min_age="3" max_age="3" show_all="0">
         <chapters data="[1, 3, 6]" />
         <levels count="6" games_per_level="5">
-            <level n="1" data="[12, 99, 11, 0, '-', 3, 10, 5, 3]" />
-            <level n="2" data="[51, 150, 11, 0, '-', 3, 10, 5, 3]" />
-            <level n="3" data="[150, 250, 11, 0, '-', 3, 10, 5, 3]" />
-            <level n="4" data="[250, 500, 11, 0, '-', 3, 10, 5, 3]" />
-            <level n="5" data="[500, 750, 11, 0, '-', 3, 10, 5, 3]" />
-            <level n="6" data="[750, 999, 11, 0, '-', 3, 10, 5, 3]" />
+            <level n="1" data="[12, 99, 11, 0, '-', 3, 10, 5, 4]" />
+            <level n="2" data="[51, 150, 11, 0, '-', 3, 10, 5, 4]" />
+            <level n="3" data="[150, 250, 11, 0, '-', 3, 10, 5, 4]" />
+            <level n="4" data="[250, 500, 11, 0, '-', 3, 10, 5, 4]" />
+            <level n="5" data="[500, 750, 11, 0, '-', 3, 10, 5, 4]" />
+            <level n="6" data="[750, 999, 11, 0, '-', 3, 10, 5, 4]" />
         </levels>
     </game>
 
     <game dbids="32, 36, 40" min_age="4" max_age="4" show_all="0">
         <chapters data="[1, 3, 5]" />
         <levels count="5" games_per_level="5">
-            <level n="1" data="[1001, 2500, 11, 0, '-', 3, 28, 5, 3]" />
-            <level n="2" data="[2001, 4500, 11, 0, '-', 3, 28, 5, 3]" />
-            <level n="3" data="[3001, 6500, 11, 0, '-', 3, 28, 5, 3]" />
-            <level n="4" data="[4001, 8500, 11, 0, '-', 3, 28, 5, 3]" />
-            <level n="5" data="[5000, 9999, 11, 0, '-', 3, 28, 5, 3]" />
+            <level n="1" data="[1001, 2500, 11, 0, '-', 3, 28, 5, 4]" />
+            <level n="2" data="[2001, 4500, 11, 0, '-', 3, 28, 5, 4]" />
+            <level n="3" data="[3001, 6500, 11, 0, '-', 3, 28, 5, 4]" />
+            <level n="4" data="[4001, 8500, 11, 0, '-', 3, 28, 5, 4]" />
+            <level n="5" data="[5000, 9999, 11, 0, '-', 3, 28, 5, 4]" />
         </levels>
     </game>
 
     <game dbids="32, 36, 40" min_age="5" max_age="5" show_all="0">
         <chapters data="[1, 3, 5]" />
         <levels count="5" games_per_level="5">
-            <level n="1" data="[10001, 25000, 11, 0, '-', 6, 29, 5, 3]" />
-            <level n="2" data="[20001, 45000, 11, 0, '-', 6, 29, 5, 3]" />
-            <level n="3" data="[30001, 65000, 11, 0, '-', 6, 29, 5, 3]" />
-            <level n="4" data="[40001, 85000, 11, 0, '-', 6, 29, 5, 3]" />
-            <level n="5" data="[50000, 99999, 11, 0, '-', 6, 29, 5, 3]" />
+            <level n="1" data="[10001, 25000, 11, 0, '-', 6, 29, 5, 4]" />
+            <level n="2" data="[20001, 45000, 11, 0, '-', 6, 29, 5, 4]" />
+            <level n="3" data="[30001, 65000, 11, 0, '-', 6, 29, 5, 4]" />
+            <level n="4" data="[40001, 85000, 11, 0, '-', 6, 29, 5, 4]" />
+            <level n="5" data="[50000, 99999, 11, 0, '-', 6, 29, 5, 4]" />
         </levels>
     </game>
 
     <game dbids="32, 36, 40" min_age="6" max_age="6" show_all="0">
         <chapters data="[1, 3, 5]" />
         <levels count="5" games_per_level="5">
-            <level n="1" data="[100001, 250000, 11, 0, '-', 8, 11, 5, 3]" />
-            <level n="2" data="[200001, 450000, 11, 0, '-', 8, 11, 5, 3]" />
-            <level n="3" data="[300001, 650000, 11, 0, '-', 8, 11, 5, 3]" />
-            <level n="4" data="[400001, 850000, 11, 0, '-', 8, 11, 5, 3]" />
-            <level n="5" data="[500000, 999999, 11, 0, '-', 8, 11, 5, 3]" />
+            <level n="1" data="[100001, 250000, 11, 0, '-', 8, 11, 5, 4]" />
+            <level n="2" data="[200001, 450000, 11, 0, '-', 8, 11, 5, 4]" />
+            <level n="3" data="[300001, 650000, 11, 0, '-', 8, 11, 5, 4]" />
+            <level n="4" data="[400001, 850000, 11, 0, '-', 8, 11, 5, 4]" />
+            <level n="5" data="[500000, 999999, 11, 0, '-', 8, 11, 5, 4]" />
+        </levels>
+    </game>
+    
+    <!-- subtraction with negative numbers -->
+    
+    <game dbids="221, 222, 223" min_age="4" max_age="4" show_all="1">
+        <chapters data="[1, 3, 5, 7, 9, 11]" />
+        <levels count="11" games_per_level="5">
+            <level n="1" data="[11, 49, 50, 100, '-', 4, 28, 4, 3]" />
+            <level n="2" data="[11, 99, 100, 250, '-', 4, 28, 4, 3]" />
+            <level n="3" data="[101, 999, 999, 3999, '-', 4, 28, 4, 3]" />
+            <level n="4" data="[1001, 2500, 2501, 4999, '-', 4, 28, 4, 3]" />
+            <level n="5" data="[1001, 5000, 5001, 9999, '-', 4, 28, 4, 3]" />
+            <level n="6" data="[-1000, -100, 201, 1999, '-', 4, 28, 4, 3]" />
+            <level n="7" data="[-2500, -100, 201, 3999, '-', 4, 28, 4, 3]" />
+            <level n="8" data="[-5000, -1000, 201, 4999, '-', 4, 28, 4, 3]" />
+            <level n="9" data="[-7500, -1000, 1011, 2499, '-', 4, 28, 4, 3]" />
+            <level n="10" data="[-4999, -500, -2000, -99, '-', 4, 29, 4, 3]" />
+            <level n="11" data="[-4999, 5000, -4999, -99, '-', 4, 29, 4, 3]" />
+        </levels>
+    </game>
+
+    <game dbids="221, 222, 223" min_age="5" max_age="6" show_all="0">
+        <chapters data="[1, 3, 5, 7, 9, 11]" />
+        <levels count="11" games_per_level="5">
+            <level n="1" data="[119, 499, 509, 1009, '-', 6, 29, 4, 3]" />
+            <level n="2" data="[119, 999, 1009, 25099, '-', 6, 29, 4, 3]" />
+            <level n="3" data="[1010, 9999, 9999, 39999, '-', 6, 29, 4, 3]" />
+            <level n="4" data="[10010, 25009, 25019, 49999, '-', 6, 29, 4, 3]" />
+            <level n="5" data="[10010, 50009, 50019, 99999, '-', 6, 29, 4, 3]" />
+            <level n="6" data="[-10000, -1009, 2019, 19999, '-', 6, 29, 4, 3]" />
+            <level n="7" data="[-25000, -1009, 2019, 39999, '-', 6, 29, 4, 3]" />
+            <level n="8" data="[-50000, -10009, 2019, 49999, '-', 6, 29, 4, 3]" />
+            <level n="9" data="[-75000, -10000, 10110, 24999, '-', 6, 29, 4, 3]" />
+            <level n="10" data="[-49999, -5000, -20000, -999, '-', 7, 30, 4, 3]" />
+            <level n="11" data="[-49999, 50000, -49999, -999, '-', 7, 30, 4, 3]" />
         </levels>
     </game>
 
     <!-- animal maching games game060 -->
     <game dbids="88, 89" min_age="0" max_age="7" show_all="1">
-        <chapters data="[1, 3, 5]" />
-        <levels count="15" games_per_level="5">
+        <chapters data="[1, 3, 5, 7, 9, 11]" />
+        <levels count="11" games_per_level="5">
             <level n="1" data="[4, 2]" />
             <level n="2" data="[5, 2]" />
             <level n="3" data="[6, 2]" />
             <level n="4" data="[7, 2]" />
-            <level n="5" data="[5, 3]" />
-            <level n="6" data="[6, 3]" />
-            <level n="7" data="[7, 3]" />
-            <level n="8" data="[5, 4]" />
-            <level n="9" data="[6, 4]" />
-            <level n="10" data="[7, 4]" />
-            <level n="11" data="[5, 5]" />
-            <level n="12" data="[6, 5]" />
-            <level n="13" data="[7, 5]" />
-            <level n="14" data="[6, 6]" />
-            <level n="15" data="[7, 6]" />
+            <level n="5" data="[6, 3]" />
+            <level n="6" data="[5, 4]" />
+            <level n="7" data="[6, 4]" />
+            <level n="8" data="[7, 4]" />
+            <level n="9" data="[6, 5]" />
+            <level n="10" data="[6, 6]" />
+            <level n="11" data="[7, 6]" />
         </levels>
     </game>
 
@@ -501,6 +641,7 @@
     <!-- or alternatively: -->
     <!-- data = ['coma separated list of numbers', 0, 'coma separated list of numbers for the second number', 0, '*', font_size, font_size for matching game, matching game horizontal count, vertical count] -->
     <!-- or mix of both -->
+    <!-- make sure the horizontal count * vertical count is an even number -->
     <game dbids="33, 37, 38, 41, 42" min_age="2" max_age="2" show_all="0">
         <chapters data="[1, 3, 6, 10]" />
         <levels count="10" games_per_level="10">
@@ -520,37 +661,37 @@
     <game dbids="33, 37, 38, 41, 42" min_age="3" max_age="3" show_all="0">
         <chapters data="[1, 4, 8, 12]" />
         <levels count="12" games_per_level="10">
-            <level n="1" data="['3, 4', 0, 1, 6, '*', 2, 8, 5, 3]" />
-            <level n="2" data="[1, 6, '3, 4', 0, '*', 2, 8, 5, 3]" />
-            <level n="3" data="['3, 4, 8', 0, 1, 6, '*', 2, 8, 5, 3]" />
-            <level n="4" data="[1, 6, '3, 4, 8', 0, '*', 2, 8, 5, 3]" />
-            <level n="5" data="['3, 4', 0, 7, 12, '*', 2, 8, 5, 3]" />
-            <level n="6" data="[7, 12, '3, 4', 0, '*', 2, 8, 5, 3]" />
-            <level n="7" data="['3, 4, 8', 0, 7, 12, '*', 2, 8, 5, 3]" />
-            <level n="8" data="[7, 12, '3, 4, 8', 0, '*', 2, 8, 5, 3]" />
+            <level n="1" data="['3, 4', 0, 1, 6, '*', 2, 8, 5, 4]" />
+            <level n="2" data="[1, 6, '3, 4', 0, '*', 2, 8, 5, 4]" />
+            <level n="3" data="['3, 4, 8', 0, 1, 6, '*', 2, 8, 5, 4]" />
+            <level n="4" data="[1, 6, '3, 4, 8', 0, '*', 2, 8, 5, 4]" />
+            <level n="5" data="['3, 4', 0, 7, 12, '*', 2, 8, 5, 4]" />
+            <level n="6" data="[7, 12, '3, 4', 0, '*', 2, 8, 5, 4]" />
+            <level n="7" data="['3, 4, 8', 0, 7, 12, '*', 2, 8, 5, 4]" />
+            <level n="8" data="[7, 12, '3, 4, 8', 0, '*', 2, 8, 5, 4]" />
 
-            <level n="9" data="['3, 4, 5, 8', 0, 1, 12, '*', 2, 8, 5, 3]" />
-            <level n="10" data="[1, 12, '3, 4, 5, 8', 0, '*', 2, 8, 5, 3]" />
-            <level n="11" data="['2, 3, 4, 5, 8', 0, 1, 12, '*', 2, 8, 5, 3]" />
-            <level n="12" data="[1, 12, '2, 3, 4, 5, 8', 0, '*', 2, 8, 5, 3]" />
+            <level n="9" data="['3, 4, 5, 8', 0, 1, 12, '*', 2, 8, 5, 4]" />
+            <level n="10" data="[1, 12, '3, 4, 5, 8', 0, '*', 2, 8, 5, 4]" />
+            <level n="11" data="['2, 3, 4, 5, 8', 0, 1, 12, '*', 2, 8, 5, 4]" />
+            <level n="12" data="[1, 12, '2, 3, 4, 5, 8', 0, '*', 2, 8, 5, 4]" />
         </levels>
     </game>
 
     <game dbids="33, 37, 38, 41, 42" min_age="4" max_age="7" show_all="1">
         <chapters data="[1, 4, 8, 12]" />
         <levels count="12" games_per_level="10">
-            <level n="1" data="['6, 7, 9', 0, 1, 6, '*', 2, 9, 5, 3]" />
-            <level n="2" data="[1, 6, '6, 7, 9', 0, '*', 2, 9, 5, 3]" />
-            <level n="3" data="['6, 7, 9, 11, 12', 0, 1, 6, '*', 2, 9, 5, 3]" />
-            <level n="4" data="[1, 6, '6, 7, 9, 11, 12', 0, '*', 2, 9, 5, 3]" />
-            <level n="5" data="['6, 7, 9', 0, 7, 12, '*', 2, 9, 5, 3]" />
-            <level n="6" data="[7, 12, '6, 7, 9', 0, '*', 2, 9, 5, 3]" />
-            <level n="7" data="['6, 7, 9, 11, 12', 0, 7, 12, '*', 2, 9, 5, 3]" />
-            <level n="8" data="[7, 12, '6, 7, 9, 11, 12', 0, '*', 2, 9, 5, 3]" />
-            <level n="9" data="[3, 9, 3, 12, '*', 2, 9, 5, 3]" />
-            <level n="10" data="[3, 12, 3, 9, '*', 2, 9, 5, 3]" />
-            <level n="11" data="[4, 12, 4, 12, '*', 2, 9, 5, 3]" />
-            <level n="12" data="['4, 6, 7, 8, 9, 11, 12', 0, '4, 6, 7, 8, 9, 11, 12', 0, '*', 2, 9, 5, 3]" />
+            <level n="1" data="['6, 7, 9', 0, 1, 6, '*', 2, 9, 5, 4]" />
+            <level n="2" data="[1, 6, '6, 7, 9', 0, '*', 2, 9, 5, 4]" />
+            <level n="3" data="['6, 7, 9, 11, 12', 0, 1, 6, '*', 2, 9, 5, 4]" />
+            <level n="4" data="[1, 6, '6, 7, 9, 11, 12', 0, '*', 2, 9, 5, 4]" />
+            <level n="5" data="['6, 7, 9', 0, 7, 12, '*', 2, 9, 5, 4]" />
+            <level n="6" data="[7, 12, '6, 7, 9', 0, '*', 2, 9, 5, 4]" />
+            <level n="7" data="['6, 7, 9, 11, 12', 0, 7, 12, '*', 2, 9, 5, 4]" />
+            <level n="8" data="[7, 12, '6, 7, 9, 11, 12', 0, '*', 2, 9, 5, 4]" />
+            <level n="9" data="[3, 9, 3, 12, '*', 2, 9, 5, 4]" />
+            <level n="10" data="[3, 12, 3, 9, '*', 2, 9, 5, 4]" />
+            <level n="11" data="[4, 12, 4, 12, '*', 2, 9, 5, 4]" />
+            <level n="12" data="['4, 6, 7, 8, 9, 11, 12', 0, '4, 6, 7, 8, 9, 11, 12', 0, '*', 2, 9, 5, 4]" />
         </levels>
     </game>
 
@@ -740,7 +881,7 @@
 
     <game dbids="46" min_age="3" max_age="3" show_all="0">
         <chapters data="[1, 4, 8]" />
-        <levels count="7" games_per_level="5">
+        <levels count="8" games_per_level="5">
             <level n="1" data="[3, 50, 2, 100, 7]" />
             <level n="2" data="[3, 99, 2, 200, 7]" />
             <level n="3" data="[5, 50, 3, 150, 7]" />
@@ -1071,8 +1212,8 @@
     </game>
 
     <game dbids="47" min_age="3" max_age="7" show_all="1">
-        <chapters data="[1, 6]" />
-        <levels count="6" games_per_level="15">
+        <chapters data="[1, 8]" />
+        <levels count="8" games_per_level="15">
             <level n="1" data="[3]" />
             <level n="2" data="[4]" />
             <level n="3" data="[5]" />
@@ -1150,6 +1291,83 @@
             <level n="1" data="[2, False, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 14, 15, 16, 17, 18]" />
             <level n="2" data="[2, True, 2, 4, 5, 6, 7, 10, 11, 12, 14, 15, 17, 18]" />
         </levels>
+    </game>
+
+    <!-- pattern games - game025 -->
+    <!-- data = [term_len_min, term_len_max, term_count_min, term_count_max, term_completed_count, semi_completed_count, shuffled] -->
+    <!-- minimum length of a single pattern term, maximum length of the term, minimum number of repeats, maximum number of repeats, number of fully completed terms, number of partially completed terms, shuffle - if True the completed sequences will not necessarily be at the begining of the chain. -->
+    <game dbids="208, 209, 210, 211, 212, 213" min_age="0" max_age="1" show_all="0">
+        <chapters data="[1, 3, 6, 9, 12, 15, 18, 22]" />
+        <levels count="22" games_per_level="5">
+            <level n="1" data="[2, 2, 4, 4, 3, 0, False]" />
+            <level n="2" data="[2, 2, 4, 4, 3, 0, True]" />
+            <level n="3" data="[2, 2, 5, 5, 2, 2, False]" />
+            <level n="4" data="[2, 2, 5, 5, 2, 2, True]" />
+            <level n="5" data="[2, 2, 5, 5, 1, 2, False]" />
+            <level n="6" data="[2, 2, 5, 5, 1, 2, True]" />
+            <level n="7" data="[2, 2, 5, 5, 0, 3, False]" />
+            <level n="8" data="[2, 2, 5, 5, 0, 3, True]" />
+            <level n="9" data="[3, 3, 4, 4, 3, 0, False]" />
+            <level n="10" data="[3, 3, 4, 4, 3, 0, True]" />
+            <level n="11" data="[3, 3, 4, 4, 2, 2, False]" />
+            <level n="12" data="[3, 3, 4, 4, 2, 2, True]" />
+            <level n="13" data="[3, 3, 4, 4, 1, 2, False]" />
+            <level n="14" data="[3, 3, 4, 4, 1, 2, True]" />
+            <level n="15" data="[3, 3, 5, 5, 0, 3, False]" />
+            <level n="16" data="[3, 3, 5, 5, 0, 3, True]" />
+            <level n="17" data="[4, 4, 4, 4, 2, 2, False]" />
+            <level n="18" data="[4, 4, 4, 4, 2, 2, True]" />
+            <level n="19" data="[4, 4, 4, 4, 1, 3, False]" />
+            <level n="20" data="[4, 4, 4, 4, 1, 3, True]" />
+            <level n="21" data="[4, 4, 4, 4, 1, 2, False]" />
+            <level n="22" data="[4, 4, 4, 4, 1, 2, True]" />
+         </levels>
+    </game>
+
+    <game dbids="208, 209, 210, 211, 212, 213" min_age="2" max_age="3" show_all="1">
+        <chapters data="[1, 3, 6, 9, 12, 15, 18]" />
+        <levels count="18" games_per_level="5">
+            <level n="1" data="[2, 2, 5, 5, 1, 2, False]" />
+            <level n="2" data="[2, 2, 5, 5, 1, 2, True]" />
+            <level n="3" data="[2, 2, 5, 5, 0, 3, False]" />
+            <level n="4" data="[2, 2, 5, 5, 0, 3, True]" />
+            <level n="5" data="[3, 3, 4, 4, 2, 0, False]" />
+            <level n="6" data="[3, 3, 4, 4, 2, 0, True]" />
+            <level n="7" data="[3, 3, 4, 4, 1, 2, False]" />
+            <level n="8" data="[3, 3, 4, 4, 1, 2, True]" />
+            <level n="9" data="[3, 3, 5, 5, 0, 3, False]" />
+            <level n="10" data="[3, 3, 5, 5, 0, 3, True]" />
+            <level n="11" data="[4, 4, 4, 4, 2, 2, False]" />
+            <level n="12" data="[4, 4, 4, 4, 2, 2, True]" />
+            <level n="13" data="[4, 4, 4, 4, 1, 3, False]" />
+            <level n="14" data="[4, 4, 4, 4, 1, 3, True]" />
+            <level n="15" data="[4, 4, 4, 4, 1, 2, False]" />
+            <level n="16" data="[4, 4, 4, 4, 1, 2, True]" />
+            <level n="17" data="[4, 4, 4, 4, 0, 3, False]" />
+            <level n="18" data="[4, 4, 4, 4, 0, 3, True]" />
+         </levels>
+    </game>
+
+    <game dbids="208, 209, 210, 211, 212, 213" min_age="4" max_age="6" show_all="0">
+        <chapters data="[1, 3, 6, 10, 12, 16]" />
+        <levels count="16" games_per_level="7">
+            <level n="1" data="[3, 3, 4, 5, 1, 2, False]" />
+            <level n="2" data="[3, 3, 4, 5, 1, 2, True]" />
+            <level n="3" data="[3, 3, 4, 5, 0, 3, False]" />
+            <level n="4" data="[3, 3, 4, 5, 0, 3, True]" />
+            <level n="5" data="[4, 4, 3, 4, 1, 2, False]" />
+            <level n="6" data="[4, 4, 3, 4, 1, 2, True]" />
+            <level n="7" data="[4, 4, 3, 4, 0, 3, False]" />
+            <level n="8" data="[4, 4, 3, 4, 0, 3, True]" />
+            <level n="9" data="[4, 4, 3, 4, 0, 2, False]" />
+            <level n="10" data="[4, 4, 3, 4, 0, 2, True]" />
+            <level n="11" data="[5, 5, 3, 3, 1, 2, False]" />
+            <level n="12" data="[5, 5, 3, 3, 1, 2, True]" />
+            <level n="13" data="[5, 5, 3, 3, 0, 3, False]" />
+            <level n="14" data="[5, 5, 3, 3, 0, 3, True]" />
+            <level n="15" data="[5, 5, 3, 3, 0, 2, False]" />
+            <level n="16" data="[5, 5, 3, 3, 0, 2, True]" />
+         </levels>
     </game>
 
 </levels>

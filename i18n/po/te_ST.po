@@ -123,6 +123,12 @@ msgstr "Pentagon"
 msgid "Hexagon"
 msgstr "Hexagon"
 
+msgid "Heptagon"
+msgstr ""
+
+msgid "Octagon"
+msgstr ""
+
 msgid "Circle"
 msgstr "Circle"
 
@@ -161,9 +167,6 @@ msgstr "Default Language:"
 
 msgid "Guest"
 msgstr "Guest"
-
-msgid "Hi Stranger :) Would you like to log in so we know who you are?"
-msgstr "Hi Stranger :) Would you like to log in so we know who you are?"
 
 msgid "Log in:"
 msgstr "Log in:"
@@ -1254,3 +1257,39 @@ msgstr "Transport"
 
 msgid "Food"
 msgstr "Food"
+
+msgid "Listening Exercises"
+msgstr ""
+
+msgid "Match sounds to words"
+msgstr ""
+
+msgid "Patterns"
+msgstr ""
+
+msgid "Number Patterns"
+msgstr ""
+
+msgid "Letter Patterns"
+msgstr ""
+
+msgid "Color Patterns"
+msgstr ""
+
+msgid "Image Patterns"
+msgstr ""
+
+msgid "Fraction Patterns"
+msgstr ""
+
+msgid "Shape Patterns"
+msgstr ""
+
+msgid "Complete the pattern on the top line."
+msgstr ""
+
+msgid "Match shapes to their names"
+msgstr ""
+
+msgid "Negative numbers"
+msgstr ""

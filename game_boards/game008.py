@@ -17,7 +17,8 @@ class Board(gd.BoardGame):
     def create_game_objects(self, level=1):
         self.board.decolorable = False
         self.board.draw_grid = False
-        color = (252, 252, 252)
+        #color = (252, 252, 252)
+        color = (255, 255, 255, 0)
         mask_color = color
         data = [7, 3]
 
@@ -69,6 +70,8 @@ class Board(gd.BoardGame):
                                 masks[self.chosen[i]])
             self.board.add_unit(x + i, 2, 1, 1, classes.board.ImgShip, str(self.shuffled2[i]), (0, 0, 0, 0),
                                 images[self.shuffled2[i]], alpha=True)
+            self.board.ships[-1].checkable = True
+            self.board.ships[-1].init_check_images()
 
         for each in self.board.ships:
             self.board.all_sprites_list.move_to_front(each)
@@ -80,6 +83,8 @@ class Board(gd.BoardGame):
 
     def handle(self, event):
         gd.BoardGame.handle(self, event)  # send event handling up
+        if event.type == pygame.KEYDOWN or event.type == pygame.MOUSEBUTTONDOWN:
+            self.auto_check_reset()
         if event.type == pygame.MOUSEBUTTONDOWN:
             if self.board.active_ship >= 0:
                 active = self.board.ships[self.board.active_ship]
@@ -89,6 +94,11 @@ class Board(gd.BoardGame):
                 active = self.board.ships[self.board.active_ship]
                 active.image.set_alpha(255)
             self.check_result()
+
+    def auto_check_reset(self):
+        for each in self.board.ships:
+            if each.checkable:
+                each.set_display_check(None)
 
     def update(self, game):
         game.fill((255, 255, 255))
@@ -103,16 +113,18 @@ class Board(gd.BoardGame):
                 units = []
                 # collect value and x position on the grid from ships list
                 for i in range(self.item_count):
-                    ships.append([self.board.ships[i].grid_x, int(self.board.ships[i].value)])
+                    ships.append([self.board.ships[i].grid_x, int(self.board.ships[i].value), self.board.ships[i]])
                     units.append([self.board.units[i].grid_x, int(self.board.units[i].value)])
                 ships.sort()
                 units.sort()
                 correct = True
                 for i in range(self.item_count):
-                    if i < 4:
-                        if ships[i][1] != units[i][1]:
-                            correct = False
+                    if ships[i][1] != units[i][1]:
+                        ships[i][2].set_display_check(False)
+                        correct = False
+                    else:
+                        ships[i][2].set_display_check(True)
                 if correct == True:
                     self.level.next_board()
-                else:
-                    pass
+        self.mainloop.redraw_needed[0] = True
+

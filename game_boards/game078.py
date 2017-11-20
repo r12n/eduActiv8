@@ -8,7 +8,7 @@ import classes.board
 import classes.extras as ex
 import classes.game_driver as gd
 import classes.level_controller as lc
-import classes.clock
+import classes.drw.clock
 
 class Board(gd.BoardGame):
     def __init__(self, mainloop, speaker, config, screen_w, screen_h):
@@ -174,12 +174,14 @@ class Board(gd.BoardGame):
                 self.board.add_unit(slots[i][0], slots[i][1], 1, 1, classes.board.Ship, "", white, "", self.font_size)
                 self.clock_wrapper = self.board.ships[-1]
                 self.board.active_ship = self.clock_wrapper.unit_id
-                self.clock = classes.clock.Clock(self, self.clock_wrapper, self.size, self.time[i], self.data[2:11])
+                self.clock = classes.drw.clock.Clock(self, self.clock_wrapper, self.size, self.time[i], self.data[2:11])
             else:
                 self.board.add_unit(slots[i][0], slots[i][1], 1, 1, classes.board.Letter,
                                     "%02d:%02d" % (self.time[i - switch][0], self.time[i - switch][1]), white, "", 8)
                 self.board.ships[-1].font_color = color4
             self.immo(self.board.ships[-1])
+            self.board.ships[i].checkable = True
+            self.board.ships[i].init_check_images()
         self.outline_all(color4, 1)
 
         self.mainloop.redraw_needed[0] = True
@@ -219,6 +221,8 @@ class Board(gd.BoardGame):
                             self.history[1].image.set_alpha(50)
                             self.history[0].update_me = True
                             self.history[1].update_me = True
+                            self.history[0].set_display_check(True)
+                            self.history[1].set_display_check(True)
                             self.found += 2
                             if self.found == self.square_count:
                                 self.completed_mode = True

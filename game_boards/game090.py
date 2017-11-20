@@ -8,7 +8,7 @@ import classes.board
 import classes.extras as ex
 import classes.game_driver as gd
 import classes.level_controller as lc
-import classes.clock
+import classes.drw.clock
 
 
 class Board(gd.BoardGame):
@@ -220,7 +220,7 @@ class Board(gd.BoardGame):
                 self.board.add_unit(position_list[pos][0], position_list[pos][1], xw, xw, classes.board.Ship, "", color0, "", self.font_size)
                 self.clock_wrapper = self.board.ships[-1]
                 self.board.active_ship = self.clock_wrapper.unit_id
-                self.clock = classes.clock.Clock(self, self.clock_wrapper, self.size*xw, self.time[i], self.data2[2:11])
+                self.clock = classes.drw.clock.Clock(self, self.clock_wrapper, self.size*xw, self.time[i], self.data2[2:11])
 
             else:
                 if self.mainloop.m.game_var2 == 0:
@@ -239,6 +239,8 @@ class Board(gd.BoardGame):
             self.board.ships[i].readable = False
             self.board.ships[i].perm_outline = True
             self.board.ships[i].uncovered = False
+            self.board.ships[i].checkable = True
+            self.board.ships[i].init_check_images()
         self.outline_all(self.color2, 1)
 
     def handle(self, event):
@@ -271,6 +273,8 @@ class Board(gd.BoardGame):
                             self.history[1].image.set_alpha(50)
                             self.history[0].update_me = True
                             self.history[1].update_me = True
+                            self.history[0].set_display_check(True)
+                            self.history[1].set_display_check(True)
                             self.found += 2
                             if self.found == self.square_count:
                                 self.completed_mode = True

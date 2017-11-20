@@ -149,6 +149,12 @@ msgstr "П’ятикутник"
 msgid "Hexagon"
 msgstr "Шестикутник"
 
+msgid "Heptagon"
+msgstr ""
+
+msgid "Octagon"
+msgstr ""
+
 msgid "Circle"
 msgstr "Коло"
 
@@ -187,9 +193,6 @@ msgstr "Типова мова:"
 
 msgid "Guest"
 msgstr "Гість"
-
-msgid "Hi Stranger :) Would you like to log in so we know who you are?"
-msgstr "Вітаємо, незнайомцю! :) Чи не увійдете до системи, щоб ми дізналися, ким ви є?"
 
 msgid "Log in:"
 msgstr "Вхід:"
@@ -1283,3 +1286,40 @@ msgstr "транспорт"
 
 msgid "Food"
 msgstr "їжа"
+
+
+msgid "Listening Exercises"
+msgstr ""
+
+msgid "Match sounds to words"
+msgstr ""
+
+msgid "Patterns"
+msgstr ""
+
+msgid "Number Patterns"
+msgstr ""
+
+msgid "Letter Patterns"
+msgstr ""
+
+msgid "Color Patterns"
+msgstr ""
+
+msgid "Image Patterns"
+msgstr ""
+
+msgid "Fraction Patterns"
+msgstr ""
+
+msgid "Shape Patterns"
+msgstr ""
+
+msgid "Complete the pattern on the top line."
+msgstr ""
+
+msgid "Match shapes to their names"
+msgstr ""
+
+msgid "Negative numbers"
+msgstr ""

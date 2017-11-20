@@ -16,7 +16,7 @@ class Board(gd.BoardGame):
     def create_game_objects(self, level=1):
         self.board.decolorable = False
         self.board.draw_grid = False
-        white = (255, 255, 255)
+        white = (255, 255, 255, 0)
         self.font_col = (0, 0, 0)
         if self.mainloop.scheme is not None:
             if self.level.lvl > 1:
@@ -35,7 +35,7 @@ class Board(gd.BoardGame):
                                   self.dp["purple"], self.dp["magenta"], self.dp["indigo"], self.dp["pink"],
                                   self.dp["maroon"], self.dp["brown"], self.dp["aqua"], self.dp["lime"]]
             # self.color_choice= ["white",    "black",      "grey",       "red",     "orange",  "yellow",   "olive",    "green",  "sea green","teal",     "blue",   "navy",   "purple",    "magenta",  "indigo",  "pink"       "maroon",  "brown",     "aqua",      "lime" ]
-            self.hue_choice = [[255, 255, 255], [2, 2, 2], [140, 140, 140], [255, 0, 0], [255, 138, 0], [255, 255, 0],
+            self.hue_choice = [[255, 255, 255, 255], [0, 0, 0, 255], [140, 140, 140], [255, 0, 0], [255, 138, 0], [255, 255, 0],
                                [181, 219, 3], [0, 160, 0], [41, 131, 82], [0, 130, 133], [0, 0, 255], [0, 0, 132],
                                [132, 0, 132], [255, 0, 255], [74, 0, 132], [255, 20, 138], [132, 0, 0], [140, 69, 16],
                                [0, 255, 255], [0, 255, 0]]
@@ -61,7 +61,7 @@ class Board(gd.BoardGame):
                                   self.dp["blue"], self.dp["navy"], self.dp["purple"], self.dp["pink"],
                                   self.dp["brown"]]
             # self.color_choice= ["white",    "black",      "grey",      "red",     "orange",   "yellow",   "olive",    "green",  "blue",    "navy",   "purple",   "pink"]
-            self.hue_choice = [[255, 255, 255], [2, 2, 2], [140, 140, 140], [255, 0, 0], [255, 138, 0], [255, 255, 0],
+            self.hue_choice = [[255, 255, 255, 255], [0, 0, 0, 255], [140, 140, 140], [255, 0, 0], [255, 138, 0], [255, 255, 0],
                                [181, 219, 3], [0, 160, 0], [0, 0, 255], [0, 0, 132], [132, 0, 132], [255, 20, 138],
                                [140, 69, 16]]
             self.hue_choice2 = [[150, 150, 150], [100, 100, 100], [100, 100, 100], [200, 0, 0], [200, 80, 0],
@@ -84,7 +84,7 @@ class Board(gd.BoardGame):
                                   self.dp["purple"], self.dp["magenta"], self.dp["indigo"], self.dp["pink"],
                                   self.dp["maroon"], self.dp["brown"], self.dp["aqua"], self.dp["lime"]]
             # self.color_choice= ["white",    "black",      "grey",       "red",     "orange",  "yellow",   "olive",    "green",  "sea green","teal",     "blue",   "navy",   "purple",    "magenta",  "indigo",  "pink"       "maroon",  "brown",     "aqua",      "lime" ]
-            self.hue_choice = [[255, 255, 255], [2, 2, 2], [140, 140, 140], [255, 0, 0], [255, 138, 0], [255, 255, 0],
+            self.hue_choice = [[255, 255, 255, 255], [0, 0, 0, 255], [140, 140, 140], [255, 0, 0], [255, 138, 0], [255, 255, 0],
                                [181, 219, 3], [0, 160, 0], [41, 131, 82], [0, 130, 133], [0, 0, 255], [0, 0, 132],
                                [132, 0, 132], [255, 0, 255], [74, 0, 132], [255, 20, 138], [132, 0, 0], [140, 69, 16],
                                [0, 255, 255], [0, 255, 0]]
@@ -118,7 +118,7 @@ class Board(gd.BoardGame):
 
         self.data = data
         self.center = self.data[0] // 2
-        self.vis_buttons = [1, 1, 1, 1, 1, 0, 1, 0, 0]
+        self.vis_buttons = [0, 1, 1, 1, 1, 0, 1, 0, 0]
         self.mainloop.info.hide_buttonsa(self.vis_buttons)
 
         self.layout.update_layout(data[0], data[1])
@@ -139,6 +139,8 @@ class Board(gd.BoardGame):
 
             self.board.ships[-1].speaker_val = self.color_choicep[self.shuffled2[i]]
             self.board.ships[-1].speaker_val_update = False
+            self.board.ships[-1].checkable = True
+            self.board.ships[-1].init_check_images()
             font_color = self.init_font_color[self.shuffled2[i]]
             if self.level.lvl == 1:
                 self.board.ships[i].font_color = font_color
@@ -191,17 +193,25 @@ class Board(gd.BoardGame):
         for i in range(5):
             color1 = self.hue_choice[self.chosen[i]]
             color2 = self.hue_choice2[self.chosen[i]]
-            canvas = pygame.Surface([size, size - 1])
+            canvas = pygame.Surface([size, size - 1], flags=pygame.SRCALPHA)
             canvas.fill(self.board.units[i].initcolor)
             self.draw_splash(canvas, size, color1, color2)
             self.board.units[i].painting = canvas.copy()
 
+    def auto_check_reset(self):
+        for each in self.board.ships:
+            if each.checkable:
+                each.set_display_check(None)
+
     def draw_splash(self, canvas, size, color, outline_color):
         pygame.draw.polygon(canvas, color, self.scaled_lines, 0)
-        pygame.draw.aalines(canvas, outline_color, True, self.scaled_lines)
+        #pygame.draw.aalines(canvas, outline_color, True, self.scaled_lines)
+        pygame.draw.lines(canvas, outline_color, True, self.scaled_lines)
 
     def handle(self, event):
         gd.BoardGame.handle(self, event)  # send event handling up
+        if event.type == pygame.KEYDOWN or event.type == pygame.MOUSEBUTTONDOWN:
+            self.auto_check_reset()
         if event.type == pygame.MOUSEMOTION:
             if self.drag:
                 self.swap_font_color()
@@ -209,6 +219,7 @@ class Board(gd.BoardGame):
             #  self.swap_font_color()
         elif event.type == pygame.MOUSEBUTTONUP:
             self.swap_font_color()
+            self.check_result()
             #  if self.drag and self.mouse_entered_new:
             #  self.swap_font_color()
 
@@ -234,27 +245,28 @@ class Board(gd.BoardGame):
     def check_result(self):
         # checking copied from number sorting game and re-done
         match_found = False
-        for j in range(3):
-            if self.board.grid[j][self.center - 2:self.center + 3] == [1, 1, 1, 1, 1]:  # self.solution_grid:
-                ships = []
-                units = []
-                # collect value and x position on the grid from ships list
-                for i in range(5):
-                    ships.append([self.board.ships[i].grid_x, self.board.ships[i].value])
-                    units.append([self.board.units[i].grid_x, self.board.units[i].value])
-                # ships_sorted = sorted(ships)
-                ships.sort()
-                units.sort()
-                correct = True
-                for i in range(5):
-                    if i < 4:
-                        if ships[i][1] != units[i][1]:
-                            correct = False
-                if correct == True:
-                    match_found = True
-                    break
+        if self.board.grid[0][self.center - 2:self.center + 3] == [1, 1, 1, 1, 1]:  # self.solution_grid:
+            ships = []
+            units = []
+            # collect value and x position on the grid from ships list
+            for i in range(5):
+                ships.append([self.board.ships[i].grid_x, self.board.ships[i].value, self.board.ships[i]])
+                units.append([self.board.units[i].grid_x, self.board.units[i].value])
+            # ships_sorted = sorted(ships)
+            ships.sort()
+            units.sort()
+            correct = True
+            for i in range(5):
+                if ships[i][1] != units[i][1]:
+                    ships[i][2].set_display_check(False)
+                    correct = False
+                else:
+                    ships[i][2].set_display_check(True)
+
+            if correct == True:
+                match_found = True
+                #break
         if match_found:
             self.level.next_board()
-        else:
-            self.level.try_again(True)
-            self.level.try_again()
+
+        self.mainloop.redraw_needed[0] = True
