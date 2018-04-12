@@ -1,14 +1,14 @@
 # eduActiv8 - Educational Activity Pack - translation file.
-# Copyright (C) 2012 - 2013 Ireneusz Imiolek
+# Copyright (C) 2012 - 2018 Ireneusz Imiolek
 # This file is distributed under the same license as the eduactiv8 package.
-# Ireneusz Imiolek <imiolek.i@googlemail.com>, 2013.
+# Ireneusz Imiolek <imiolek.i@googlemail.com>, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.31.105\n"
 "Report-Msgid-Bugs-To: Ireneusz Imiolek <imiolek.i@gmail.com>\n"
 "POT-Creation-Date: 2013-11-01 15:33+0000\n"
-"PO-Revision-Date: 2018-01-31 01:22+0000\n"
+"PO-Revision-Date: 2018-04-11 12:45+0100\n"
 "Last-Translator: Ireneusz Imiolek <imiolek.i@googlemail.com>\n"
 "Language-Team: Polish "
 "<https://weblate.r12n.org/projects/eduactiv8/eduactiv8/pl/>\n"
@@ -1443,3 +1443,48 @@ msgstr "Aktualizacja eduActiv8 jest dostępna. Obecna wersja: %s, Nowa wersja: %
 
 msgid "check for updates on start"
 msgstr "sprawdź dostępność aktualizacji programu przy starcie"
+
+msgid "Symmetry"
+msgstr "Symetria"
+
+msgid "Reflection Symmetry - draw with shapes"
+msgstr "Lustrzana  symetria - rysuj kształtami"
+
+msgid "Reflect shapes"
+msgstr "Kształty w odbiciu lustrzanym"
+
+msgid "Reflect a shape in a mirror line"
+msgstr "Figury symetryczne względem prostej"
+
+msgid "Draw a shape that is a reflection of the one already displayed. The red line is the mirror line."
+msgstr "Narysuj figurę, która będzie odbiciem lustrzanym figury widocznej na ekranie. Czerwona linja jest osią symetrii."
+
+msgid "Symmetrical shapes - missing half"
+msgstr "Figury symetryczne - brakująca połowa"
+
+msgid "Draw the other half of the shape"
+msgstr "Narysuj drugą połowę figury"
+
+msgid "Find lines of symmetry."
+msgstr "Znajdź wszystkie osie symetrii"
+
+msgid "Find and select all lines of symmetry for a displayed shape. Click on the arrows around the drawing area to select them."
+msgstr "Znajdź i zaznacz wszystkie osie symetrii wyświetlonych figur. Kliknij na strzałki znajdujące się wkoło rysunku by je zaznaczyć."
+
+msgid "Match equivalent fractions"
+msgstr "Dopasuj ułamki równoważne"
+
+msgid "Match fractions"
+msgstr "Dopasuj ułamki zwykłe"
+
+msgid "Match decimals"
+msgstr "Dopasuj ułamki dziesiętne"
+
+msgid "Match percentages"
+msgstr "Dopasuj procenty"
+
+msgid "Match ratios"
+msgstr "Dopasuj proporcje"
+
+msgid "Read pie charts"
+msgstr "Procenty na wykresach kołowych"
